@@ -1,0 +1,42 @@
+{
+  "name": "spammy-ackend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=spammy:* nodemon --exec babel-node src/app.js",
+    "test": "mocha src/tests/**/**.spec.js --require @babel/register --exit"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
+    "@hapi/joi": "^16.0.1",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "chai-as-promised": "^7.1.1",
+    "conf": "^6.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.1.1",
+    "email-addresses": "^3.0.3",
+    "express": "~4.16.1",
+    "lodash": "^4.17.15",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "sequelize": "^5.18.4",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
